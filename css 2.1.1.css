@@ -1,0 +1,177 @@
+/*шапка сайта*/
+header{
+	display: flex;
+	height: 70px;
+	background-color: #000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+/*иконка бургер меню*/
+.burger_menu{
+	float: left;
+	margin: auto;
+	margin-left: 30px;
+	height: 44px;
+	cursor: pointer;
+	/* visibility: hidden; */
+}
+
+
+
+/* лого stepik*/
+.image_stepik{
+	float: left;
+	margin: auto;
+	margin-left: 20px;
+	height: 34px;
+}
+
+
+/*лого ютуба*/
+.image_youtube{
+	float: left;
+	margin: auto;
+	height: 34px;
+}
+
+
+/*Моя страничка*/
+#My_page{
+	float: left;
+	margin: auto;
+	margin-left: 15px;
+	text-decoration: none;
+	font: 34px Arial, bold;
+	color: #FFFFFF;
+	cursor: default;
+}
+
+
+/*Ссылка каталог*/
+.Catalog{
+	margin: auto;
+	margin-left: 30px;
+	text-decoration: none;
+	color: #FFFFFF;
+	font: 20px Arial, bold;
+	cursor: default;
+}
+
+
+/*Ссылка Моё обучение*/
+.My_education{
+	margin: auto;
+	margin-left: 15px;
+	text-decoration: none;
+	color: #FFFFFF;
+	font: 20px Arial, bold;
+	cursor: pointer;
+}
+
+
+/*Ссылка на канал Хауди Хо*/
+.My_videos{
+	flex-grow: 1;
+	margin: auto;
+	margin-left: 15px;
+	margin-right: 15px;
+	text-decoration: none;
+	color: #FFFFFF;	
+	font: 20px Arial, bold;
+	cursor: pointer;
+}
+
+
+
+/*Смена цвета на жёлтый при наведении на ссылку*/
+.Catalog:hover{	
+	color: #FBC62A;
+}
+
+
+.My_education:hover{	
+	color: #FBC62A;
+}
+
+
+.My_videos:hover{	
+	color: #FBC62A;
+}
+
+
+/*Поисковик*/
+#search{
+	margin: auto;
+	height: 24px;
+	background-color: #FFF;
+	color: #000;
+	border: 3px solid #CCC;
+	border-radius: 5px;
+}
+
+
+/*Значок профиля П Ж*/
+#profile{
+	margin: auto;
+	margin-left: 10px;
+	margin-right: 50px;
+	height: 34px;
+}
+
+
+
+
+.sidebar{
+	position: fixed;
+	top: 0;
+	left: -200px;
+	height: 100vh;
+	width: 200px;
+	border-top: 1px solid #BBB;
+	background-color: #000;
+	margin-top: 70px;
+	transition: 0.5s;
+	box-sizing: border-box;
+}
+
+.sidebar.active{
+	left: 0;
+}
+
+
+.sidebar a{
+	display: flex;
+	flex-direction: column;
+	padding: 30px;
+	padding-bottom: 0px;
+	color: #FFF;
+	text-decoration: none;
+	text-align: center;
+	font: 20px Arial, bold;
+	cursor: pointer;
+}
+
+
+.sidebar a:hover{
+	color: #FBC62A;
+}
+
+
+.content{
+	position: fixed;
+	top: 0;
+	left: 0;
+	margin-top: 70px;
+	margin-left: 150px;
+}
+
+
+
+/* @media (max-width: 540px) {
+  .burger_menu {
+    visibility: visible;
+  }
+}*/
