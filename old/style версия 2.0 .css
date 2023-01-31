@@ -1,0 +1,125 @@
+/*шапка сайта*/
+header{
+	display: flex;
+	background-color: #000000;	
+	height: 120px;
+	width: 100%;
+}
+
+/* лого stepik*/
+.image_stepik{
+	float: left;
+	margin: auto;
+	margin-left: 50px;
+	height: 50px;
+}
+
+/*лого ютуба*/
+.image_youtube{
+	float: left;
+	margin: auto;
+	height: 50px;
+}
+
+/*Моя страничка*/
+#My_page{
+	margin: auto;
+	margin-left: 15px;
+	text-decoration: none;
+	float: left;
+	font: 50px Arial, bold;
+	color: #FFFFFF;
+	cursor: default;
+}
+
+
+/*Ссылка каталог*/
+.Catalog{
+	margin: auto;
+	margin-left: 30px;
+	text-decoration: none;
+	color: #FFFFFF;
+	font: 25px Arial, bold;
+	cursor: default;
+}
+
+
+/*Ссылка Моё обучение*/
+.My_education{
+	margin: auto;
+	margin-left: 25px;
+	text-decoration: none;
+	color: #FFFFFF;
+	font: 25px Arial, bold;
+	cursor: pointer;
+}
+
+
+/*Ссылка на канал Хауди Хо*/
+.My_videos{
+	flex-grow: 1;
+	margin: auto;
+	margin-left: 25px;
+	margin-right: 25px;
+	text-decoration: none;
+	color: #FFFFFF;	
+	font: 25px Arial, bold;
+	cursor: pointer;
+}
+
+/*Смена цвета на жёлтый при наведении на ссылку*/
+.Catalog:hover{	
+	color: #FBC62A;
+}
+
+
+.My_education:hover{	
+	color: #FBC62A;
+}
+
+
+.My_videos:hover{	
+	color: #FBC62A;
+}
+
+
+/*Поисковик*/
+#search{
+	margin: auto;
+	height: 33px;
+	width: 210px;
+	background-color: #FFF;
+	color: #000;
+	border: 4px solid #CCC;
+	border-radius: 5px;
+}
+
+/*Значок профиля П Ж*/
+#profile{
+	margin: auto;
+	margin-left: 25px;
+	margin-right: 50px;
+	height: 45px;
+}
+
+
+/*Заголовок: Изучаем Java Script!*/
+h1{
+	text-align: center;
+	font: 75px Arial, bold;
+	color: #F4CA16;
+	background-color: #50C878;
+	margin-left: auto;
+	margin-right: auto;
+	border: 5px solid #C1FFCD;
+	border-radius: 5px;
+
+}
+
+
+#result{
+	color: #F6D473;
+	background-color: #39B4FF;
+}
+
+

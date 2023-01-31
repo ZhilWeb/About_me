@@ -1,27 +1,38 @@
-/*шапка сайта*/
+/* шапка сайта */
 header{
 	display: flex;
+	flex-wrap: wrap;
 	height: 70px;
-	background-color: #000;
+	background-color: #2A63EF;
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
 }
 
-/*иконка бургер меню*/
-.burger_menu{
+
+.menu_icon{
 	float: left;
 	margin: auto;
 	margin-left: 30px;
-	height: 44px;
+	width: 29px;
+	height: 29px;
+	padding: 3.5px 0;
+	background: #2A63EF;
+	box-sizing: border-box;
 	cursor: pointer;
-	/* visibility: hidden; */
 }
 
+.menu_icon span{
+	width: 100%;
+	height: 3px;
+	display: block;
+	background: #fff;
+	margin-bottom: 6px;
+	border-radius: 5px;
+}
 
-
-/* лого stepik*/
+/* лого stepik */
 .image_stepik{
 	float: left;
 	margin: auto;
@@ -30,27 +41,29 @@ header{
 }
 
 
-/*лого ютуба*/
+/* лого ютуба */
 .image_youtube{
 	float: left;
 	margin: auto;
-	height: 34px;
+	margin-left: 10px;
+	height: 30px;
 }
 
 
-/*Моя страничка*/
+/* Моя страничка */
 #My_page{
 	float: left;
+	flex-shrink: 0;
 	margin: auto;
 	margin-left: 15px;
 	text-decoration: none;
-	font: 34px Arial, bold;
+	font: 40px Arial, bold;
 	color: #FFFFFF;
 	cursor: default;
 }
 
 
-/*Ссылка каталог*/
+/* Ссылка каталог */
 .Catalog{
 	margin: auto;
 	margin-left: 30px;
@@ -61,8 +74,9 @@ header{
 }
 
 
-/*Ссылка Моё обучение*/
+/* Ссылка Моё обучение */
 .My_education{
+	flex-shrink: 0;
 	margin: auto;
 	margin-left: 15px;
 	text-decoration: none;
@@ -72,9 +86,10 @@ header{
 }
 
 
-/*Ссылка на канал Хауди Хо*/
+/* Ссылка на канал Хауди Хо */
 .My_videos{
 	flex-grow: 1;
+	flex-shrink: 0;
 	margin: auto;
 	margin-left: 15px;
 	margin-right: 15px;
@@ -86,7 +101,7 @@ header{
 
 
 
-/*Смена цвета на жёлтый при наведении на ссылку*/
+/* Смена цвета на жёлтый при наведении на ссылку */
 .Catalog:hover{	
 	color: #FBC62A;
 }
@@ -102,7 +117,7 @@ header{
 }
 
 
-/*Поисковик*/
+/* Поисковик */
 #search{
 	margin: auto;
 	height: 24px;
@@ -113,7 +128,7 @@ header{
 }
 
 
-/*Значок профиля П Ж*/
+/* Значок профиля П Ж */
 #profile{
 	margin: auto;
 	margin-left: 10px;
@@ -127,11 +142,11 @@ header{
 .sidebar{
 	position: fixed;
 	top: 0;
-	left: -200px;
-	height: 100vh;
-	width: 200px;
+	left: -300px;
+	height: 100%;
+	width: 300px;
 	border-top: 1px solid #BBB;
-	background-color: #000;
+	background-color: #2A63EF;
 	margin-top: 70px;
 	transition: 0.5s;
 	box-sizing: border-box;
@@ -141,11 +156,15 @@ header{
 	left: 0;
 }
 
-
-.sidebar a{
+/* Меню сайдбара */
+.menu{
 	display: flex;
 	flex-direction: column;
-	padding: 30px;
+	padding-top: 10%;
+}
+
+.menu a{
+	padding-top: 30px;
 	padding-bottom: 0px;
 	color: #FFF;
 	text-decoration: none;
@@ -155,23 +174,96 @@ header{
 }
 
 
-.sidebar a:hover{
+.menu a:hover{
 	color: #FBC62A;
 }
 
+
+.social-icon{
+	display: flex;
+	left: 0;
+	margin: 0;
+	bottom: 120px;
+	padding: 0 20px;
+	position: absolute;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+
+.social-icon a{
+	flex-grow: 1;
+	width: 20%;
+	text-align: center;
+	list-style: none;
+	display: block;
+	font-size: 30px;
+	color: #fff;
+	line-height: 52px;
+	border-radius: 50%;
+	transition: 0.5s;
+}
+
+
+.social-icon a:hover{
+	background: #fc2827;
+}
+
+.footer{
+	left: 0;
+	margin: 0;
+	bottom: 70px;
+	padding: 0 20px;
+	position: absolute;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.footer p{
+	color: #fff;
+	text-align: center;
+}
 
 .content{
 	position: fixed;
 	top: 0;
 	left: 0;
 	margin-top: 70px;
-	margin-left: 150px;
+	margin-left: 350px;
+	font-size: 30px;
 }
 
 
 
-/* @media (max-width: 540px) {
-  .burger_menu {
-    visibility: visible;
-  }
-}*/
+@media all and (max-width: 1200px){
+
+	header{
+		height: 100px;
+	}
+
+
+	#profile{
+		margin-right: auto;
+	}
+
+
+	.sidebar{
+		margin-top: 100px;
+		height: calc(100% - 30px);
+	}
+
+	.content{
+		margin-top: 100px;
+	}
+}
+
+
+@media all and (max-width: 900px){
+
+	.My_videos{
+		flex-grow: 0;
+		margin-left: auto;
+	}
+
+}
+

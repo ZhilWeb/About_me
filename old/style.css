@@ -1,0 +1,120 @@
+header{
+	display: flex;
+	background-color: #000000;	
+	height: 60px;
+	width: 100%;
+}
+
+.image_stepik{
+	float: left;
+	height: 30px;
+	margin-left: 50px;
+	margin-top: 15px;
+}
+
+
+.image_youtube{
+	float: left;
+	height: 30px;
+	margin-top: 15px;
+}
+
+#My_page{
+	display: inline-block;
+	text-decoration: none;
+	float: left;
+	font: 30px Arial, bold;
+	margin-top: 13px;
+	margin-left: 20px;
+	color: #FFFFFF;
+	cursor: default;
+}
+
+
+
+.Catalog{
+	margin-top: 22px;
+	display: inline-block;
+	text-decoration: none;
+	color: #FFFFFF;
+	margin-left: 50px;
+	font: 15px Arial, bold;
+	cursor: default;
+}
+
+
+.My_education{
+	flex-grow: ;
+	margin-top: 22px;
+	margin-left: 15px;
+	text-decoration: none;
+	color: #FFFFFF;
+	
+	font: 15px Arial, bold;
+	cursor: pointer;
+}
+
+
+.My_videos{
+	flex-grow: 2;
+	margin-right: 100px;
+	margin-top: 22px;
+	margin-left: 15px;
+	text-decoration: none;
+	color: #FFFFFF;	
+	font: 15px Arial, bold;
+	cursor: pointer;
+}
+
+
+.Catalog:hover{	
+	color: #FBC62A;
+}
+
+
+.My_education:hover{	
+	color: #FBC62A;
+}
+
+
+.My_videos:hover{	
+	color: #FBC62A;
+}
+
+
+
+#search{
+	margin-top: 17px;
+	height: 19px;
+	background-color: #FFF;
+	color: #000;
+	border: 3px solid #CCC;
+	border-radius: 5px;
+}
+
+#profile{
+	margin-left: 15px;
+	margin-right: 35px;
+	height: 29px;
+	padding-top: 16px;
+}
+
+h1{
+	text-align: center;
+	font: 50px Arial, bold;
+	color: #F4CA16;
+	background-color: #50C878;
+	margin-left: 350px;
+	margin-right: 350px;
+	border: 5px solid #C1FFCD;
+	border-radius: 5px;
+
+}
+
+
+
+p{
+	background-color: #dddddd;
+	padding: 7px;
+	margin: 10px;
+}
