@@ -1,3 +1,82 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+html{
+	height: 100%;
+}
+
+body {
+  line-height: 1;
+  overflow: hidden;
+  height: 100%;
+}
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+h1 {
+  font-size: 48px;
+  font-weight: bold; }
+
+h2 {
+  font-size: 34px;
+  font-weight: bold; }
+
+h3 {
+  font-size: 20px;
+  font-weight: bold; }
+
+h4 {
+  font-size: 16px;
+  font-weight: bold; }
+
+h5 {
+  font-size: 14px;
+  font-weight: bold; }
+
+h6 {
+  font-size: 12px;
+  font-weight: bold; }
+
+
 /* шапка сайта */
 header{
 	display: flex;
@@ -98,8 +177,6 @@ header{
 	font: 20px Arial, bold;
 	cursor: pointer;
 }
-
-
 
 /* Смена цвета на жёлтый при наведении на ссылку */
 .Catalog:hover{	
@@ -212,7 +289,7 @@ header{
 .footer{
 	left: 0;
 	margin: 0;
-	bottom: 70px;
+	bottom: 100px;
 	padding: 0 20px;
 	position: absolute;
 	width: 100%;
@@ -229,13 +306,51 @@ header{
 	top: 0;
 	left: 0;
 	margin-top: 70px;
-	margin-left: 350px;
+	margin-left: 350px;	
 	font-size: 30px;
+    height: 95%;
+	overflow-y: scroll;
 }
 
+.content.inactive{
+	z-index: auto;
+	overflow-y: scroll;
+}
 
+.block {
+	height: 100%;
+    background-color: #ebebeb;
+    padding: 36px 42px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    margin-right: 10%;
+}
 
-@media all and (max-width: 1200px){
+.block h1 {
+	font-weight: bold;
+    color: #3a3a3a;
+}
+
+.block .block__content {
+	padding-top: 40px;
+}
+
+.full-text {
+    font-size: 18px;
+    color: #3a3a3a;
+    line-height: 1.7em;
+}
+
+.full-text p {
+    text-indent: 0;
+    margin: 0 0 26px 0;
+}
+
+.full-text h1, .full-text h2, .full-text h3, .full-text h4, .full-text h5, .full-text h6 {
+    margin: 52px 0 26px 0;
+}
+
+@media all and (max-width: 1250px){
 
 	header{
 		height: 100px;
@@ -254,16 +369,78 @@ header{
 
 	.content{
 		margin-top: 100px;
+		margin-left: 35%;
 	}
+
+	.block{
+		margin-bottom: 75px;
+	}
+
 }
 
 
-@media all and (max-width: 900px){
+
+@media all and (max-width: 950px){
 
 	.My_videos{
 		flex-grow: 0;
 		margin-left: auto;
 	}
 
+	.sidebar{
+		position: absolute;
+	}
+
+	.content{
+		margin-left: 0;
+		z-index: auto;
+	}
+
+	.content.inactive{
+		z-index: -1;
+		overflow-y: hidden;
+	}
+
+	.block{
+		margin-left: 20%;
+	}
 }
 
+@media all and (max-width: 650px){
+
+	header{
+		height: 130px;
+	}
+
+
+	#profile{
+		margin-right: auto;
+	}
+
+
+	.sidebar{
+		margin-top: 130px;
+		height: calc(100% - 60px);
+	}
+
+	.content{
+		margin-top: 130px;
+	}
+	.block{
+		margin-left: 10%;
+	}
+}
+
+
+@media all and (max-height: 700px){
+	.content{
+		height: 92.5%;
+	}
+}
+
+
+@media all and (max-height: 500px){
+	.content{
+		height: 90%;
+	}
+}

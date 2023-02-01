@@ -5,6 +5,11 @@ jQuery('document').ready(function () {
 
 	jQuery(burger).on("click", function() {
 		jQuery(".sidebar").toggleClass( "active");
+		
+		
+		setTimeout( function(){
+			jQuery(".content").toggleClass( "inactive");
+		}, 100);
 	});
 
 });
