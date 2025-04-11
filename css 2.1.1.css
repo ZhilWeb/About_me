@@ -151,28 +151,17 @@ header{
 
 /* Ссылка Моё обучение */
 .My_education{
-	flex-shrink: 0;
-	margin: auto;
-	margin-left: 15px;
-	text-decoration: none;
-	color: #FFFFFF;
-	font: 20px Arial, bold;
-	cursor: pointer;
-}
-
-
-/* Ссылка на канал Хауди Хо */
-.My_videos{
 	flex-grow: 1;
 	flex-shrink: 0;
 	margin: auto;
 	margin-left: 15px;
 	margin-right: 15px;
 	text-decoration: none;
-	color: #FFFFFF;	
+	color: #FFFFFF;
 	font: 20px Arial, bold;
 	cursor: pointer;
 }
+
 
 /* Смена цвета на жёлтый при наведении на ссылку */
 .Catalog:hover{	
